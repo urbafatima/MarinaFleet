@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      :root {
+    --primary-color: #0a1b40;
+    --secondary-color: #bfa582;
+    --heading-font: "DM Serif Display", serif;
+    --para-font: "Rajdhani", sans-serif;
+    --nav-font: "Open Sans", sans-serif;
+}
+
+nav {
+    background-color: var(--primary-color);
+    height: 110px;
+}
+.nav-links{
+    margin-left: 60px;
+}
+header .logo {
+    margin-left: 60px;
+}
+
+header .logo img {
+    height: 110px;
+    width: 100px;
+}
+
+.nav-links a,
+span {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 13px;
+    font-family: var(--nav-font);
+}
+
+.nav-links a:hover {
+    border-bottom: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.nav-sec-2,
+.nav-sec-1 {
+    margin-top: 70px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown span {
+    cursor: default;
+}
+
+.dropdown img {
+    width: 200px;
+    height: 150px;
+}
+
+.d-flex a {
+    color: black;
+}
+
+.margins {
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 522px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    margin-left: -197px;
+
+}
+
+.dropdown-content a {
+    text-align: center;
+    margin-left: 12px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+      }
+      .container > div {
+        flex: 1;
+        padding: 20px;
+      }
+      .container > div:not(:last-child) {
+        border-right: 1px solid #ccc;
+      }
+
+      #bgpic1 {
+        background-image: url(JoinOurTeamBlockImg_D.jpg);
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #inerdiv {
+        width: 80%;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+      }
+
+      .header-eight {
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .main-heading {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+
+      .description {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .read-more-btn {
+        text-decoration: none;
+        color: #0d6efd;
+        font-weight: bold;
+        border: 1px solid #0d6efd;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .read-more-btn:hover {
+        background-color: #0d6efd;
+        color: white;
+      }
+      footer {
+    background-color: #0a1b40;
+    height: 300px;
+    margin-top: 50px;
+    padding-top: 30px;
+}
+.shipyard h4{
+    font-family: var(--heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+}
+.shift-1 a{
+    text-decoration: none;
+    color: white;
+}
+.shift-1 li{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.shift-2 li{
+    margin-bottom: 5px;
+}
+.shift-1 a:hover{
+    color: #bfa582;
+    text-decoration: underline;
+}
+.shift-2 a:hover{
+    color: #bfa582;
+    text-decoration: underline;
+}
+
+.shift-1 ul{
+    list-style: none;
+}
+
+.shift-2 a{
+    text-decoration: none;
+    color: white;
+}
+.shift-2 ul{
+    list-style: none;
+}
+.margin-40{
+    margin-left: 37px;
+}
+.sh-2 ul{
+    padding-left: 0;
+}
+.shift-2{
+    margin-left: 25px;
+}
+      @media only screen and (max-width: 575px) {
+
+.nav-links {
+    display: block;
+    margin-top: 17px;
+}
+
+.nav-links a,
+span {
+    margin-left: 7px;
+    font-size: 9px;
+}
+
+nav{
+    height: 60px;
+}
+header .logo {
+    margin-left: 0;
+    margin-top: 10px;
+}
+.dropdown-content {
+    margin-left: -92px;
+    width: 310px;
+}
+
+.dropdown img {
+    width: 130px;
+    height: 120px;
+}
+.nav-links{
+    margin-left: 0;
+}
+.sm-none{
+    display: none;
+}
+.shift-1 a{
+    font-size: 12px;
+}
+.shift-2 a{
+    font-size: 12px;
+}
+footer{
+    height: 702px;
+}
+.shipyard h4{
+    font-size: 17px;
+}
+}
+@media (max-width:768px) {
+.container-1 .popup-image img {
+    width: 95%;
+}
+footer{
+    height: 356px;
+}
+.margin-40{
+    margin-left: -20px;
+}
+
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+          <div class="container">
+              <div class="row align-items-center justify-content-center">
+                  <div class="col-lg-1 sm-none col-md-2">
+                      <div class="logo">
+                          <a href="/home.html"><img src="./images/logo.webp" alt="logo"></a>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-7 col-12 col-md-10">
+                      <div class="nav-links">
+                          <a href="/home.html">HOME</a>
+                          <a href="./index.html">ABOUT US</a>
+                          <div class="dropdown">
+                              <span>BUY</span>
+                              <div class="dropdown-content">
+                                  <div class="d-flex margins">
+                                      <a href="/buyYacht.html">
+                                          <img src="./images/yacht.webp" class="m-0" alt="yacht image">
+                                          Yacht</a>
+                                      <a href="/buyBoat.html">
+                                          <img src="./images/boat.webp" alt="boat image">
+                                          Boat</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <a href="#">GALLERY</a>
+                          <a href="/Feedback Page/Feedback.Html">FEEDBACK</a>
+                          <a href="./contactUs.HTML">CONTACT US</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </nav>
+  </header>
+    <main>
+        <div class="container">
+            <div>
+                <p>ISM SAFETY MANAGEMENT MANUAL AND ISPS SHIP SECURITY PLAN</p>
+            </div>
+            <div>
+                <p>DESIGNATED PERSON ASHORE (DPA) AND COMPANY SECURITY OFFICER (CSO)</p>
+            </div>
+            <div>
+                <p>QUALIFIED 24/7 EMERGENCY RESPONSE</p>
+            </div>
+        </div> 
+        <br>
+      <div id="bgpic1">
+        <div id="inerdiv">
+          <h8 class="header-eight">Careers</h8>
+          <h3 class="main-heading">Join Our TEAM</h3>
+          <div class="description">
+            <p>
+              We are looking to grow our talented yacht management team. If you
+              are ready for your next challenge, have a passion for yachting and
+              strive for excellence in all that you do, then we would love to
+              talk to you. We offer excellent career opportunities and a great
+              working environment.
+            </p>
+          </div>
+          <a
+            href="https://www.phoenix-yachts.com/careers/"
+            class="read-more-btn"
+            >Read More</a
+          >
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-4 col-sm-12 col-md-4">
+                  <div class="shipyard">
+                      <h4>Our Shipyards</h4>
+                      <div class="d-flex margin-40">
+                          <div class="shift-1">
+                              <ul>
+                                  <li><a href="#">Royal Den</a></li>
+                                  <li><a href="#">Ice Yacht</a></li>
+                                  <li><a href="#">FeadShip</a></li>
+                                  <li><a href="#">Van Der Graf</a></li>
+                                  <li><a href="#">Silver Yachts</a></li>
+                                  <li><a href="#">Admiral</a></li>
+                              </ul>
+                          </div>
+                          <div class="shift-2">
+                              <ul>
+                                  <li><a href="#">Neorion</a></li>
+                                  <li><a href="#">Benetti</a></li>
+                                  <li><a href="#">Mengi Yay</a></li>
+                                  <li><a href="#">Pirou</a></li>
+                                  <li><a href="#">Uljanik</a></li>
+                                  <li><a href="#">Palmer Johnson</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-12 col-md-4">
+                  <div class="shipyard">
+                      <h4>Popular Shipyards</h4>
+                      <div class="shift-1 sh-2">
+                          <ul>
+                          <li><a href="#">Royal Den</a></li>
+                          <li><a href="#">Benetti</a></li>
+                          <li><a href="#">Ice Yacht</a></li>
+                          <li><a href="#">Van Der Graf</a></li>
+                          <li><a href="#">Silver Yacht</a></li>
+                      </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-12 col-md-4">
+                  <div class="shipyard">
+                      <h4>Useful Links</h4>
+                      <div class="shift-1 sh-2">
+                          <ul>
+                              <li><a href="./index.html">About Us</a></li>
+                              <li><a href="/buyYacht.html">Buy a Yacht</a></li>
+                              <li><a href="/buyBoat.html">Buy a Boat</a></li>
+                              <li><a href="/Feedback Page/Feedback.Html">Feedback</a></li>
+                              <li><a href="#">Contact Us</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

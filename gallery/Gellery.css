@@ -1,0 +1,287 @@
+:root {
+    --primary-color: #0a1b40;
+    --secondary-color: #bfa582;
+    --heading-font: "DM Serif Display", serif;
+    --para-font: "Rajdhani", sans-serif;
+    --nav-font: "Open Sans", sans-serif;
+}
+
+nav {
+    background-color: var(--primary-color);
+    height: 110px;
+}
+
+header .logo {
+    margin-left: 60px;
+}
+
+header .logo img {
+    height: 110px;
+    width: 100px;
+}
+
+.nav-links a,span {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 13px;
+    font-family: var(--nav-font);
+}
+
+.nav-links a:hover {
+    border-bottom: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.nav-sec-2,
+.nav-sec-1 {
+    margin-top: 70px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown span {
+    cursor: default;
+  }
+  .dropdown img{
+    width: 200px;
+    height: 150px;
+    margin-left: 10px;
+  }
+  .d-flex a{
+    color: black;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.jc-center {
+    justify-content: center;
+}
+.carousel-inner span {
+    font-size: 30px;
+    font-family: var(--heading-font);
+    position: absolute;
+    margin-top: -50px;
+}
+.sec-2 img{
+    height: 85vh;
+}
+.buy-yacht h1 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+.buy-yacht{
+    border-bottom: 1px solid var(--secondary-color);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 170px;
+    height: 35px;
+}
+
+.sec-3 {
+    margin-top: 40px;
+}
+
+.para-buy p {
+    font-family: var(--para-font);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sailing {
+    margin-top: 40px;
+}
+
+.sailing h2 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 30px;
+    border-bottom: 1px solid var(--secondary-color);
+    width: 59%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.expertise {
+    width: 86%;
+}
+
+.sailing p {
+    font-family: var(--para-font);
+    font-size: 16px;
+    padding-right: 25px;
+}
+
+.expertise p {
+    padding-right: 0;
+
+}
+.featured-yacht{
+   border-bottom: 1px solid var(--secondary-color);
+   height: 35px;
+   margin: 0 auto;
+   margin-top: 50px;
+   margin-bottom: 30px;
+   width: 280px;
+}
+.featured-yacht h2{
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+.images-yachts img{
+    margin: 0 auto;
+    height: 300px;
+    width: 550px;
+}
+.recent-sales h3{
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid var(--secondary-color);
+    width: 39%;
+    margin: 30px auto;
+    margin-top: 50px;
+}
+.recent-sales p {
+    font-family: var(--para-font);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}.click-here{
+    margin-top: 40px;
+    display: flex;
+}
+.click-here a{
+    font-family: var(--para-font);
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin-left: 100px;
+}
+footer{
+    background-color: #0a1b40;
+    height: 300px;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 575px) {
+    
+    .nav-links{
+        margin-left: 40px;
+        display: block;
+        margin-top: 17px;
+    }
+    .nav-links a{
+        margin-left: 7px;
+        font-size: 11px;
+    }
+    header .logo img {
+        height: 90px;
+        width: 90px;
+    }
+    header .logo{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .buy-yacht{
+        height: 25px;
+        width: 110px;
+    }
+    .buy-yacht h1{
+        font-size: 20px;
+    }
+    .sailing h2 {
+        font-size: 20px;
+    }
+    .expertise{
+        width: 100%;
+    }
+    .sailing p {
+        text-align: center;
+        padding-right: 0;
+    }
+    .images-yachts{
+        margin-top: 30px;
+    }
+    .recent-sales h3 {
+        font-size: 20px;
+        width: 80%;
+    }
+    .recent-sales p{
+        font-size: 16px;
+    }
+    .buy-yacht p {
+        font-size: 16px;
+    }
+    .click-here{
+        display: block;
+    }
+    .click-here a{
+        margin-left: 0;
+    }
+  }
+@media (min-width: 576px) and (max-width:992px){
+    .nav-links{
+        margin-left: 50px;
+    }
+    .sec-2 img {
+        height: 50vh;
+    }
+    .sailing h2{
+        width: 48%;
+    }
+    .expertise{
+        width: 100%;
+    }
+    .images-yachts img{
+        margin-top: 30px;
+    }
+    .recent-sales h3{
+        width: 60%;
+    }
+    .click-here a{
+        margin-left: 0;
+    }
+    .click-here{
+        display: block;
+    }
+}
+.main h4{
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid var(--secondary-color);
+    width: 39%;
+    margin: 30px auto;
+    margin-top: 50px;
+    
+}
+
+
+.img-fluid{
+    height: 250px;
+    width: 500px; 
+    padding-left: 23px;
+    padding-bottom: 15px;
+
+}
